@@ -1,1 +1,9 @@
-<app-une-stat *ngFor="let s of tabStat" [uneStat]="s" (Asupprimer)="supprimer(s)"></app-une-stat>
+<!-- <app-une-stat *ngFor="let s of tabStat" [uneStat]="s" (Asupprimer)="supprimer(s)"></app-une-stat> -->
+<nav>
+    <ul>
+        <li><a routerLink="/app-liste-stat" routerLinkActive="active">Liste des stats</a></li>
+        <li><a routerLink="/app-creation-stat" routerLinkActive="active">Création de stat</a></li>
+    </ul>
+</nav>
+
+<router-outlet></router-outlet>
