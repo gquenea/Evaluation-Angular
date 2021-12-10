@@ -1,1 +1,1 @@
-<app-une-stat [uneStat]="tabStat[0]"></app-une-stat>
+<app-une-stat *ngFor="let s of tabStat" [uneStat]="s"></app-une-stat>
