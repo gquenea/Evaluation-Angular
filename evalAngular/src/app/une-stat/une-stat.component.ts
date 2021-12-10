@@ -9,10 +9,7 @@ import { Statistique } from '../models/statistique';
 export class UneStatComponent implements OnInit {
   @Input() public uneStat!: Statistique;
 
-  constructor() {
-    let meteoFrance: Statistique = new Statistique('10', 'meteo france', 20);
-    let meteoItalie: Statistique = new Statistique('11', 'meteo Italie', 25);
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 }
