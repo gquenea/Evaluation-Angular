@@ -1,1 +1,6 @@
-<p>creation-stat works!</p>
+<form (ngSubmit)="creerStatistique(monForm)" #monForm="ngForm">
+    <input type="text" name="identifiant" [(ngModel)]="identifiant">
+    <input type="text" name="titre" [(ngModel)]="titre">
+    <input type="number" name="valeur" [(ngModel)]="valeur">
+    <input type="submit" [disabled]="!monForm.valid" />
+</form>
